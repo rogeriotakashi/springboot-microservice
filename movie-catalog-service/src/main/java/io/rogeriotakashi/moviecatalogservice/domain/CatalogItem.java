@@ -3,14 +3,14 @@ package io.rogeriotakashi.moviecatalogservice.domain;
 public class CatalogItem {
 
 	private String name;
-	private String desc;
+	private String overview;
 	private int rating;
 	
 	
-	public CatalogItem(String name, String desc, int rating) {
+	public CatalogItem(String name, String overview, int rating) {
 		super();
 		this.name = name;
-		this.desc = desc;
+		this.overview = overview;
 		this.rating = rating;
 	}
 	
@@ -26,18 +26,21 @@ public class CatalogItem {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	/**
-	 * @return the desc
+	 * @return the overview
 	 */
-	public String getDesc() {
-		return desc;
+	public String getOverview() {
+		return overview;
 	}
+
 	/**
-	 * @param desc the desc to set
+	 * @param overview the overview to set
 	 */
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setOverview(String overview) {
+		this.overview = overview;
 	}
+
 	/**
 	 * @return the rating
 	 */
@@ -52,7 +55,7 @@ public class CatalogItem {
 	}
 	@Override
 	public String toString() {
-		return "CatalogItem [name=" + name + ", desc=" + desc + ", rating=" + rating + "]";
+		return "CatalogItem [name=" + name + ", desc=" + overview + ", rating=" + rating + "]";
 	}
 	
 	

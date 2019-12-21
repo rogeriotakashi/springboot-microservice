@@ -1,14 +1,16 @@
-package io.rogeriotakashi.movieinfoservice.controller;
+package io.rogeriotakashi.movieinfoservice.models;
 
 public class Movie {
 	private String movieId;
 	private String name;
+	private String overview;
 	
 	
-	public Movie(String movieId, String name) {
+	public Movie(String movieId, String name, String overview) {
 		super();
 		this.movieId = movieId;
 		this.name = name;
+		this.overview = overview;
 	}
 	
 	/**
@@ -35,6 +37,23 @@ public class Movie {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
+	/**
+	 * @return the overview
+	 */
+	public String getOverview() {
+		return overview;
+	}
+
+	/**
+	 * @param overview the overview to set
+	 */
+	public void setOverview(String overview) {
+		this.overview = overview;
+	}
+	
+
 	@Override
 	public String toString() {
 		return "Movie [movieId=" + movieId + ", name=" + name + "]";
