@@ -4,6 +4,6 @@ server:
 
 spring:
   application:
-    name: movieInfoService
+    name: movie-info-service
     service-url: 
       default-zone: http://localhost:8761/eureka/
