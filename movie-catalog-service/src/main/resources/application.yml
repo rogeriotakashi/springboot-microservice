@@ -1,8 +1,0 @@
-server: 
-  port: 8081
-
-spring:
-  application:
-    name: movie-catalog-service
-    service-url: 
-      default-zone: http://localhost:8761/eureka/
