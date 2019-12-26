@@ -1,0 +1,10 @@
+server: 
+  port: 9090
+spring:
+  cloud: 
+    config:
+      server:
+        native:
+          searchLocations: https://github.com/rogeriotakashi/springboot-microservice-config/config-repo
+          
+SPRING_PROFILES_ACTIVE: native
