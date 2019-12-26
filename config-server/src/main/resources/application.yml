@@ -8,6 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/rogeriotakashi/springboot-microservice-config
+          search-paths: '{application}'
   application:
     name: configserver
 
