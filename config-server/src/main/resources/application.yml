@@ -1,10 +1,13 @@
 server: 
   port: 9090
+
+#Searching config git repository
 spring:
-  cloud: 
+  cloud:
     config:
       server:
-        native:
-          searchLocations: https://github.com/rogeriotakashi/springboot-microservice-config/config-repo
-          
-SPRING_PROFILES_ACTIVE: native
+        git:
+          uri: https://github.com/rogeriotakashi/springboot-microservice-config
+  application:
+    name: configserver
+
