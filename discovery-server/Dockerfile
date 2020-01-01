@@ -7,16 +7,14 @@ LABEL maintainer="rogeriotakashi@hotmail.com"
 # Add a volume pointing to /tmp
 VOLUME /tmp
 
-# Make port 9090 available to the world outside this container
-EXPOSE 9090
+# Make port 10000 available to the world outside this container
+EXPOSE 10000
 
 # The application's jar file
-ARG JAR_FILE=target/config-server-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/discovery-server-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} /config-server.jar
+ADD ${JAR_FILE} /discovery-server.jar
 
 # Run the jar file
-CMD ["java","-jar","/config-server.jar"]
-
-
+CMD ["java","-jar","/discovery-server.jar"]

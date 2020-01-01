@@ -1,0 +1,16 @@
+
+api:
+  url: https://api.thecatapi.com
+  key: 8267af10-11dd-4e61-a41a-acb2c84c9d79
+
+server:
+  port: 9005
+  
+spring:
+  application:
+    name: cat-service  
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/

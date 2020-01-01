@@ -1,0 +1,14 @@
+api:
+  url: https://dog.ceo
+
+server:
+  port: 9000
+  
+spring:
+  application:
+    name: dog-service
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/
