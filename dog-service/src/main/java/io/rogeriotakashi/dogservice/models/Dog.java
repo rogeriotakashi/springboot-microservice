@@ -1,29 +1,26 @@
 package io.rogeriotakashi.dogservice.models;
 
-import java.util.List;
 
 public class Dog {
-	private List<String> message;
+	private String message;
 	private String status;
-	
-	public Dog() {}
-	
-	
+
+	public Dog() {
+	}
+
 	/**
 	 * @return the message
 	 */
-	public List<String> getMessage() {
+	public String getMessage() {
 		return message;
 	}
-
 
 	/**
 	 * @param message the message to set
 	 */
-	public void setMessage(List<String> message) {
+	public void setMessage(String message) {
 		this.message = message;
 	}
-
 
 	/**
 	 * @return the status
@@ -31,6 +28,7 @@ public class Dog {
 	public String getStatus() {
 		return status;
 	}
+
 	/**
 	 * @param status the status to set
 	 */
