@@ -21,6 +21,7 @@ management:
         include: "*"
         
 zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
   routes:
     cat-resource:
       path: /catservice/**
@@ -28,5 +29,11 @@ zuul:
     oauth:
       path: /oauth/**
       service-id: AUTH-SERVICE
+      
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: 123
   
   
