@@ -19,3 +19,14 @@ management:
     web:
       exposure:
         include: "*"
+        
+zuul:
+  routes:
+    cat-resource:
+      path: /catservice/**
+      service-id: CAT-SERVICE
+    oauth:
+      path: /oauth/**
+      service-id: AUTH-SERVICE
+  
+  
