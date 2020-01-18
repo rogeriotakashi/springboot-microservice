@@ -1,0 +1,39 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: zuul-server
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:10000/eureka}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    cat-resource:
+      path: /catservice/**
+      service-id: CAT-SERVICE
+    oauth:
+      path: /oauth/**
+      service-id: AUTH-SERVICE
+      
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: 123
+  
+

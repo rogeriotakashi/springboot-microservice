@@ -1,0 +1,12 @@
+server:
+  port: 9050
+  
+spring:
+  application:
+    name: angular-webpage-services
+    
+eureka: 
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka
+

@@ -1,10 +1,13 @@
-server:
-  port: 8083
+api:
+  url: https://dog.ceo
 
+server:
+  port: 9000
+  
 spring:
   application:
-    name: movie-rating-service
-
+    name: dog-service
+  
 eureka:
   client:
     serviceUrl:
